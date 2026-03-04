@@ -1,0 +1,35 @@
+[project]
+name = "netsci-course"
+version = "0.1.0"
+description = "Network Science Lab Course — Interactive notebooks for learning complex network concepts"
+readme = "README.md"
+authors = [
+    { name = "Bals Radu" },
+    { name = "Sanda Mura" },
+    { name = "Tiberiu Dragota" },
+]
+requires-python = ">=3.12"
+dependencies = [
+    "networkx>=3.6",
+    "matplotlib>=3.10",
+    "pyvis>=0.3.2",
+    "numpy>=2.2",
+    "scipy>=1.14",
+    "pandas>=2.2",
+    "seaborn>=0.13",
+    "ipywidgets>=8.1",
+    "ipykernel>=6.29",
+    "jupyter>=1.1",
+    "scikit-learn>=1.5",
+]
+
+[dependency-groups]
+dev = ["ruff>=0.9"]
+
+[build-system]
+requires = ["uv_build>=0.10.4,<0.11.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+module-name = "netsci"
+module-root = ""
